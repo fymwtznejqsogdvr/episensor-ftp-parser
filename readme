@@ -1,0 +1,16 @@
+Instructions
+
+You can find two files in this repository:
+
+MySQL/create.sql
+This file helps you create a database and a table to receive the measurements form the episensor
+
+PHP/parser.php
+This is the most important file, it is parsing all the files you send via FTP to a folder from the Episensor device, write the in the database and then (optional) delete the file forever.
+
+
+Example:
+
+Let's say you set-up your Episensor Gateway to send via FTP to domainwhereepisensorsends.com/datafolder/ then you change the URL in the parser file and run the parser.php. 
+
+The parser will read the folder and add the values in the database (mac,datetime,value). 
